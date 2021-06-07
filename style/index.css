@@ -47,7 +47,7 @@ table {
     margin: 0;
     padding: 0;
     max-width: 100%;
-    
+    border: 1px solid grey;
 }
 
 body {
@@ -117,7 +117,7 @@ header nav {
 
 button {
     background-color:rgb(211, 197, 197);
-    width: 12vw;
+    width: 15vw;
     padding: 2%;
     font-size: 1.6rem;
     font-family: 'MATE SC', serif;
@@ -170,4 +170,57 @@ footer button {
     margin: 2%;
     padding: 1% 3%;
     width: 15vw;
+}
+
+/*Media queries*/
+@media (max-width: 800px) {
+    h1 {
+        text-align: center;
+    }
+
+    header nav {
+        margin: 0;
+        display: flex;
+        flex-direction: column;
+        padding: 0 40%;
+        text-align: center;
+    }
+
+    #main {
+        flex-direction: column;
+    }
+    
+    .mainPicture {
+        width: 100%;
+    }
+
+    #main .info {
+        align-items: center;
+        margin: 0 0 2%;
+    }
+
+    button {
+        width: 20vw;
+    }
+
+    #firstRow, #secondRow {
+        flex-wrap: wrap;
+    }
+
+    #firstRow div, #secondRow div {
+        width: 40%;
+        margin: 5%;
+    }
+
+    #firstRow div img, #secondRow div img {
+        width: 100%;
+    }
+
+    #secondRow {
+        padding: 0;
+    }
+
+    footer button {
+        width: 20vw;
+    }
 }
