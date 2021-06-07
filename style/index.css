@@ -47,7 +47,6 @@ table {
     margin: 0;
     padding: 0;
     max-width: 100%;
-    border: 1px solid grey;
 }
 
 body {
@@ -222,5 +221,36 @@ footer button {
 
     footer button {
         width: 20vw;
+    }
+}
+
+@media (max-width: 500px) {
+    h1 {
+        font-size: 2.8rem;
+    }
+
+    header nav {
+        font-size: 1.2rem;
+    }
+
+    h2 {
+        font-size: 1.8rem;
+    }
+
+    button {
+        font-size: 1.1rem;
+        width: 22vw;
+    }
+
+    .info p {
+        text-align: center;
+    }
+
+    #firstRow p, #secondRow p {
+        font-size: 1.2rem;
+    }
+
+    footer button {
+        width: 22vw;
     }
 }
